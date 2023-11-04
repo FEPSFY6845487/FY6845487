@@ -113,14 +113,15 @@ classifier confidence to drop, as in Vlachos (2008)
   </table>
  a link to whatever external source of information I'd like to be linked to my webpage <a href=”https://www.icevirtuallibrary.com/doi/full/10.1680/jbren.21.00034”>Toshihiko et al
 (2023).</a>
-<p id="date&time"></p>
+ 
+<p id="date&time”></p>
 
   <script>
 
-    //Javascript to display the date and time on my webpage
+  //Javascript to display the date and time on my webpage
 
-    const d = new Date();
-    document.getElementByld("date&time").innerHTML = d;
+   const d = new Date();
+    document.getElementByld("date&time”).innerHTML = d;
 
   </script>
  
@@ -141,22 +142,23 @@ classifier confidence to drop, as in Vlachos (2008)
       <title>Change Button Colour</title>
     </head>
     <body>
-      <button id="colorButton">Click me to change colour</button>
+      <button id="colorButton”>Click me to change colour</button>
+       
     <script>
       // Get a reference to the button element
-      var button = document.getElementByld("colorButton");
+      var button = document.getElementByld("colorButton”);
 
       // Function to change the button color
       function changeColor() {
         // Generate a random color (hexadecimal)
-        var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+        var randomColor = "#” + Math.floor(Math.random()*16777215).toString(16);
 
         // Set the button's background color to the random color
-         button.style.backgroundColor = randomColor;
+        button.style.backgroundColor = randomColor;
       }
 
       // Add a click event listener to the button
-      button.addEventListener("click", changeColor);
+      button.addEventListener("click”, changeColor);
     </script>
     </body>
   </html>
