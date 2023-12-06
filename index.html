@@ -336,7 +336,7 @@ November 27th 2023. </a>
    showSlide();
   </script>
 
- <div id="slide-container">
+<div id="slide-container">
   <img id="slide" src="Slide 1.jpg" alt="Slide 1" style="width:100%; max-width:800px;">
 
   <! -- Previous and Next button container -->
@@ -345,6 +345,15 @@ November 27th 2023. </a>
    <button class="button" onclick="nextSlide()">Next</button>
   </div>
 
+  <div class="slide-number-container">
+   <button class="button" onclick="showSlideNumber(1)">1</button>
+   <button class="button" onclick="showSlideNumber(2)">2</button>
+   <button class="button" onclick="showSlideNumber(3)">3</button>
+   <button class="button" onclick="showSlideNumber(4)">4</button>
+   <button class="button" onclick="showSlideNumber(5)">5</button>
+  </div>
+ </div>
+ 
   <style>
    /* Style to center the image */
    #slide-container {
@@ -370,7 +379,17 @@ November 27th 2023. </a>
   font-size: 16px
   cursor: pointer;
   margin: 0 5px; /* Add some margin between the buttons*/
-
  }
+
+   .slide-number-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: -50px; 
+
+   }
    
   </style>
+
+</html>
